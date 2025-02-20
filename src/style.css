@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.desc {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top: 30%;
+    left: 25%;
+}
+
+.desc .desctext {
+    grid-column: 2/8;
+    visibility: hidden;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.desc .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
